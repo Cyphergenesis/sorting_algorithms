@@ -1,39 +1,99 @@
-Project Title: 0x1B. C - Sorting algorithms & Big O
-project done by Johnson Christian and Olabanji Enioluwayan.
+# Project Title: 0x1B. C - Sorting algorithms & Big O
+***project done by Christian Johnson and Olabanji Enioluwayan.***
 
-Resources used:
-We Read and watch;
+### Resources
+***We Read and watch***
 
-Sorting algorithm
-Big O notation
-Sorting algorithms animations
-15 sorting algorithms in 6 minutes
-CS50 Algorithms explanation in detail by David Malan
-All about sorting algorithms
++ Sorting algorithm
++ Big O notation
++ Sorting algorithms animations
++ 15 sorting algorithms in 6 minutes
++ CS50 Algorithms explanation in detail by David Malan
++ All about sorting algorithms
 
 
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
-General
+### General
+```
 At least four different sorting algorithms
 What is the Big O notation, and how to evaluate the time complexity of an algorithm
 How to select the best sorting algorithm for a given input
 What is a stable sorting algorithm
-
+```
 
 TASKS:
-0. Bubble sort
-1. Insertion sort
-2. Selection sort
-3. Quick sort
-4. Shell sort - Knuth Sequence
-5. Cocktail shaker sort
-6. Counting sort
-7. Merge sort
-8. Heap sort
-9. Radix sort
-10. Bitonic sort
-11. Quick Sort - Hoare Partition scheme
-12. Dealer
++ Bubble sort
++ Insertion sort
++ Selection sort
++ Quick sort
++ Shell sort - Knuth Sequence
++ Cocktail shaker sort
++ Counting sort
++ Merge sort
++ Heap sort
++ Radix sort
++ Bitonic sort
++ Quick Sort - Hoare Partition scheme
++ Dealer
+
+# Data Structure and Functions
+
+***print_list***
+```
+#include <stdio.h>
+#include "sort.h"
+
+/**
+ * print_list - Prints a list of integers
+ *
+ * @list: The list to be printed
+ */
+void print_list(const listint_t *list)
+{
+    int i;
+
+    i = 0;
+    while (list)
+    {
+        if (i > 0)
+            printf(", ");
+        printf("%d", list->n);
+        ++i;
+        list = list->next;
+    }
+    printf("\n");
+}
+```
+
+***print_array***
+```
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * print_array - Prints an array of integers
+ *
+ * @array: The array to be printed
+ * @size: Number of elements in @array
+ */
+void print_array(const int *array, size_t size)
+{
+    size_t i;
+
+    i = 0;
+    while (array && i < size)
+    {
+        if (i > 0)
+            printf(", ");
+        printf("%d", array[i]);
+        ++i;
+    }
+    printf("\n");
+}
+```
+
+
+
+
+
+
 
