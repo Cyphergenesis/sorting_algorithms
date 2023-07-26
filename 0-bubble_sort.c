@@ -9,6 +9,7 @@
 void swap_ints(int *a, int *b)
 {
 	int tm_p;
+
 	tm_p = *a;
 	*a = *b;
 	*b = tm_p;
@@ -25,6 +26,7 @@ void bubble_sort(int *array, size_t size)
 {
 	size_t i, length = size;
 	bool bub = false;
+
 	if (array == NULL || size < 2)
 	return;
 	while (bub == false)
